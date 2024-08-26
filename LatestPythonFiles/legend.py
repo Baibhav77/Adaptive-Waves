@@ -11,12 +11,12 @@ dAZO = [5]  # Thickness of AZO layer
 dEVA = [2000000]  # Thickness of EVA layer
 dARC = [61.8]  # Thickness of ARC layer
 
-Bragg1 = ["MgF2"]  # First Bragg stack material
-Bragg2 = []  # Second Bragg stack material
+Bragg1 = ["MgF2","MgF2"]  # First Bragg stack material
+Bragg2 = ["MgF2"]  # Second Bragg stack material
 matPSC = Bragg1 + ["GLS_NEW"] + Bragg2  # Combining Bragg1 and Bragg2 with glass in between
 
-dBragg1 = [110.18]  # Thicknesses for Bragg1 (SiO2/TiO2 x2)
-dBragg2 = []  # Thicknesses for Bragg2 (TiO2/SiO2 x2)
+dBragg1 = [100,100]  # Thicknesses for Bragg1 (SiO2/TiO2 x2)
+dBragg2 = [100]  # Thicknesses for Bragg2 (TiO2/SiO2 x2)
 dPSC = dBragg1 + [dgls] + dBragg2
 incoh = 1e3  # Incoherent layer is 1000nm thickness
 theta = 0  # Angle of incidence
